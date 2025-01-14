@@ -24,7 +24,6 @@ Authorization: {{token}}
 Content-Type: application/json
 
 {
-  "customerId": 1,
   "bookId": 1
 }
 

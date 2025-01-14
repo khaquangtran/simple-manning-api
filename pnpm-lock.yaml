@@ -23,6 +23,9 @@ importers:
       morgan:
         specifier: ^1.10.0
         version: 1.10.0
+      simple-manning-api:
+        specifier: 'link:'
+        version: 'link:'
     devDependencies:
       '@types/express':
         specifier: ^5.0.0
