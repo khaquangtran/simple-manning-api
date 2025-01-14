@@ -1,0 +1,58 @@
+### Send POST request to create Customer
+POST {{hostname}}/customers/signup
+Content-Type: application/json
+
+{
+  "firstName": "Steve",
+  "lastName": "Jobs",
+  "email": "steve.jobs@apple.com",
+  "password": "stevejobs"
+}
+
+### Send POST request to login
+POST {{hostname}}/customers/login
+Content-Type: application/json
+
+{
+  "email": "steve.jobs@apple.com",
+  "password": "stevejobs"
+}
+
+### Send POST to add book to the cart
+POST {{hostname}}/carts
+Authorization: {{token}}
+Content-Type: application/json
+
+{
+  "customerId": 1,
+  "bookId": 1
+}
+
+### Send PUT to adjust cart item quantity
+PUT {{hostname}}/carts/1
+Authorization: {{token}}
+Content-Type: application/json
+
+{
+  "quantity": -40
+}
+
+### Send GET request to get customer's cart items
+GET {{hostname}}/carts?page=1&take=20
+Authorization: {{token}}
+
+### Send POST request to checkout
+POST {{hostname}}/checkout
+Authorization: {{token}}
+Content-Type: application/json
+
+{
+  "token": "some_random_string",
+  "paymentType": "PAYPAL"
+}
+
+### Send GET request to get list of books
+GET {{hostname}}/books?page=1&take=20&title=Grokking
+
+### Send GET request to get specific book
+GET {{hostname}}/books/1
