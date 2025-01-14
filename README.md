@@ -1,12 +1,8 @@
 ## Simple Manning API
 
-***
-
 Recently I bought a lot of books from [Manning](https://manning.com/). For those who don't know, Manning is an American publisher specializing in computing content. The way their website works is pretty simple, but it's still intrigue me into implementing a replication from their system.
 
 ### Production
-
-***
 
 I deployed this API into an EC2 instance so that everyone could test it.
 
@@ -15,8 +11,6 @@ ec2-3-27-248-71.ap-southeast-2.compute.amazonaws.com
 ```
 
 ### Local dev setup
-
-***
 
 Run this from the project root:
 
@@ -31,8 +25,6 @@ This would:
 - Apply `schema` into the database.
 
 ### Support API
-
-***
 
 1. Signing up.
 
@@ -113,8 +105,6 @@ Content-Type: application/json
 ```
 
 ### Planning
-
-***
 
 - [ ] CI/CD with Gitlab Actions.
 - [ ] Inspect new images pushed with WatchTower. 
