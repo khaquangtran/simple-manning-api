@@ -111,3 +111,4 @@ Content-Type: application/json
 
 - [ ] CI/CD with Gitlab Actions.
 - [ ] Inspect new images pushed with WatchTower. 
+- [x] Add rate limiting prevent DDoS attack.
