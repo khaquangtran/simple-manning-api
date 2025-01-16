@@ -7,7 +7,7 @@ Recently I bought a lot of books from [Manning](https://manning.com/). For those
 I deployed this API into an EC2 instance so that everyone could test it.
 
 ```text
-ec2-3-27-248-71.ap-southeast-2.compute.amazonaws.com
+ec2-3-27-248-71.ap-southeast-2.compute.amazonaws.com/books
 ```
 
 ## Local dev setup
